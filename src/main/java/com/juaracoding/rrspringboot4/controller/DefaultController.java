@@ -7,7 +7,6 @@ import com.juaracoding.rrspringboot4.utils.ClassIOC;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -61,7 +60,6 @@ public class DefaultController {
 	}
 
 	//batch request
-
 	/** Multipart -> Content-Type : multipart/form-data */
 	@PostMapping("/coba2")
 	public String postCoba2(

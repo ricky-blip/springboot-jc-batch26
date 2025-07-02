@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import java.util.Random;
 
 @Configuration
-public class MainConfiguration {
+public class MainConfig {
 	//untuk memakai autowired yang dimiliki bawaan java
 	@Bean
 	public Random getRandom(){
