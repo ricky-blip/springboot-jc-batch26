@@ -3,9 +3,11 @@ package com.juaracoding.rrspringboot4.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.Pattern;
 
-public class user {
+public class User {
+
 	@Pattern(regexp = "^[a-z0-9\\.]{8,16}$")
 	@JsonProperty("user-name")
+
 	private String username;
 
 	private String password;
