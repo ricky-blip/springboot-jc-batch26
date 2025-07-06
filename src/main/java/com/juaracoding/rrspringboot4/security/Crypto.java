@@ -53,7 +53,7 @@ public class Crypto {
 //        ad547b25337e946c2e50457652ff2058
 //        String strToEncrypt = "jdbc:sqlserver://host.docker.internal;databaseName=BEB24;schema=dbproject;trustServerCertificate=true";//put text to encrypt in here
 //        String strToEncrypt = "jdbc:sqlserver://host.docker.internal;trustServerCertificate=true;databaseName=BEB25";//put text to encrypt in here
-		String strToEncrypt = "smtp.gmail.com";//put text to encrypt in here
+		String strToEncrypt = "password";//put text to encrypt in here
 		System.out.println("Encryption Result : "+performEncrypt(strToEncrypt));
 
 //        jdbc:sqlserver://java-be-1:3377;databaseName=BEB24;schema=dbproject;trustServerCertificate=true
