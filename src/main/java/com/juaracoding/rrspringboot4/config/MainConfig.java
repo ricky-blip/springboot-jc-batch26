@@ -12,13 +12,13 @@ import org.springframework.core.env.Environment;
 import javax.sql.DataSource;
 import java.util.Random;
 
+
 @Configuration
 public class MainConfig {
 	@Autowired
 	private Environment env;
 
 	@Primary
-	//untuk memakai autowired yang dimiliki bawaan java
 	@Bean
 	public DataSource getDataSource() {
 		DataSourceBuilder datasourceBuilder = DataSourceBuilder.create();
@@ -28,10 +28,12 @@ public class MainConfig {
 		datasourceBuilder.password(Crypto.performDecrypt(env.getProperty("spring.datasource.password")));
 		return datasourceBuilder.build();
 	}
+
 	@Bean
 	public Random getRandom(){
 		return new Random();
 	}
+
 	@Bean
 	public ModelMapper getModelMapper(){
 		return new ModelMapper();

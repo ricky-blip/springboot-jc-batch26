@@ -2,7 +2,7 @@ package com.juaracoding.rrspringboot4.security;
 
 import java.util.function.Function;
 
-public class BycryptImp {
+public class BcryptImpl {
 	private static final BcryptCustom bcrypt = new BcryptCustom(11);
 
 	public static String hash(String password) {

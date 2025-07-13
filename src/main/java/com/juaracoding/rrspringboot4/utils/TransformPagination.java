@@ -15,7 +15,7 @@ public class TransformPagination {
 
 	String [] sortArr = new String[2];
 
-	public Map<String,Object> transform(List ls, Page page, String column, String value){
+	public Map<String,Object> transform(List ls, Page page,String column,String value){
 		Sort s = page.getSort();
 		sortArr = s.toString().split(":");
 		sortByColumn = sortArr[0];

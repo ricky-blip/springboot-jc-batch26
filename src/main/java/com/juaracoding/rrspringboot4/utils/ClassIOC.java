@@ -10,6 +10,7 @@ public class ClassIOC {
 		return "OK";
 	}
 
+
 	@Scheduled(fixedRate = 60000)
 	public void print(){
 		System.out.println("Print Per 5 Detik");
