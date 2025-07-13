@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
 public class GlobalResponse {
+
 	public static ResponseEntity<Object> dataBerhasilDisimpan(HttpServletRequest request){
 		return new ResponseHandler().handleResponse("DATA BERHASIL DISIMPAN", HttpStatus.CREATED,null,null,request);
 	}

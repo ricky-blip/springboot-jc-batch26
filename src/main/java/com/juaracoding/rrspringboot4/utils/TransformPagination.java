@@ -2,9 +2,7 @@ package com.juaracoding.rrspringboot4.utils;
 
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Component;
-import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Sort;
-import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.List;
